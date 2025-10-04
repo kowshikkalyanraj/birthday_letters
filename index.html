@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎂 Birthday Surprise 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Music -->
+  <audio id="bgMusic" src="music.mp3" loop></audio>
+
+  <!-- Password Screen -->
+  <div class="password-screen">
+    <h2>Enter Password to Open</h2>
+    <input type="password" id="passwordInput" placeholder="Type here...">
+    <button id="passwordBtn">Enter 💌</button>
+    <p id="passMsg"></p>
+  </div>
+
+  <!-- Main Interface -->
+  <div class="main-interface hidden">
+    <h1 class="title">💞 Happy Birthday Ragni 💞</h1>
+
+    <!-- Floating Hearts -->
+    <div class="floating-hearts"></div>
+
+    <!-- Spinning Cake -->
+    <div class="cake-container">
+      <img src="images/cake.png" alt="Cake" class="cake">
+    </div>
+
+    <!-- Small Message Button -->
+    <button id="openLetterBtn">Small Message ✉️</button>
+
+    <!-- Letter Box -->
+    <div class="letter-box hidden">
+      <p id="letterContent"></p>
+    </div>
+  </div>
+
+  <!-- Confetti Library -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
